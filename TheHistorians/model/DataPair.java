@@ -1,4 +1,4 @@
-package TheHistorians;
+package TheHistorians.model;
 
 import java.util.*;
 

@@ -1,11 +1,10 @@
 package TheHistorians.services;
 
-import TheHistorians.DataPair;
-import TheHistorians.DistanceCalculator;
+import TheHistorians.model.DataPair;
 
 public class ScoreCalculatorService {
     public void calculateScore(DataPair dataPair) {
-        DistanceCalculator result = new DistanceCalculator();
+        ScoreDecider result = new ScoreDecider();
 
         long answer = result.distanceCalculate(dataPair);
         long score = result.similarityScore(dataPair);

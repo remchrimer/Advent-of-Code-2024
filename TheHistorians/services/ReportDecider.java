@@ -1,7 +1,7 @@
-package TheHistorians;
+package TheHistorians.services;
 import java.util.*;
 
-public class SafeDecider {
+public class ReportDecider {
     private int count;
     private List<List<Integer>> safeCandidate;
 

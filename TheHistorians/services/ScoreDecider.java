@@ -1,7 +1,9 @@
-package TheHistorians;
+package TheHistorians.services;
+import TheHistorians.model.DataPair;
+
 import java.util.*;
 
-public class DistanceCalculator {
+public class ScoreDecider {
     private static final long mod = 1_000_000_007;
 
     public long similarityScore(DataPair data) {
