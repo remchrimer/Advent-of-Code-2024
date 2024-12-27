@@ -2,9 +2,8 @@ package TheHistorians.controllers;
 
 import TheHistorians.model.DataPair;
 import TheHistorians.file.FileParser;
-import TheHistorians.services.CorruptCalculatorService;
-import TheHistorians.services.ReportCalculatorService;
-import TheHistorians.services.ScoreCalculatorService;
+import TheHistorians.services.*;
+
 import java.util.List;
 
 public class OperationController {
@@ -33,6 +32,12 @@ public class OperationController {
                     List<List<Integer>> data = reader.parseFileToCorrupt(corruptedData);
                     CorruptCalculatorService corruptCalculatorService = new CorruptCalculatorService();
                     corruptCalculatorService.calculateMultiple(data);
+                }
+                case "--searchGivenWord" -> {
+                    List<String> data = reader.parseFile(file);
+                    char[][] parsedData = reader.parseFileToArray(data);
+                    WordSearchCalculatorService wordSearchCalculatorService = new WordSearchCalculatorService();
+                    wordSearchCalculatorService.searchWord(parsedData);
                 }
                 default -> System.err.println("Unknown operation: " + operation);
             }

@@ -1,5 +1,7 @@
 package TheHistorians.services;
 
+import TheHistorians.deciders.CorruptDecider;
+
 import java.util.List;
 
 public class CorruptCalculatorService {

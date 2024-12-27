@@ -1,4 +1,4 @@
-package TheHistorians.services;
+package TheHistorians.deciders;
 import java.util.*;
 
 public class ReportDecider {

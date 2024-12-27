@@ -29,6 +29,22 @@ public class FileParser {
         return parseFileToList(filepath);
     }
 
+    public char[][] parseFileToArray(List<String> data) {
+        if (data.isEmpty()) {
+            throw new IllegalArgumentException("The parsed data is empty");
+        }
+        char[][] parsedData = new char[data.size()][data.get(0).length()];
+        try {
+            for (int i = 0; i < data.size(); i++) {
+                parsedData[i] = data.get(i).toCharArray();
+            }
+        }
+        catch (Exception e) {
+            throw new RuntimeException("Error while executing function parseFileToArray: " + e.getMessage());
+        }
+        return parsedData;
+    }
+
     public DataPair parseFileToDataPair(List<String> parsedData) {
         List<Integer> list1 = new ArrayList<>();
         List<Integer> list2 = new ArrayList<>();

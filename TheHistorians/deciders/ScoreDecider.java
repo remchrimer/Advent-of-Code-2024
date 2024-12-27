@@ -1,4 +1,4 @@
-package TheHistorians.services;
+package TheHistorians.deciders;
 import TheHistorians.model.DataPair;
 
 import java.util.*;

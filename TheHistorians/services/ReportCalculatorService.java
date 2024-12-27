@@ -1,5 +1,7 @@
 package TheHistorians.services;
 
+import TheHistorians.deciders.ReportDecider;
+
 import java.util.List;
 
 public class ReportCalculatorService {

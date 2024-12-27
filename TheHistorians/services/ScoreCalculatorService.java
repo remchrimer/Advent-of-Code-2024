@@ -1,5 +1,6 @@
 package TheHistorians.services;
 
+import TheHistorians.deciders.ScoreDecider;
 import TheHistorians.model.DataPair;
 
 public class ScoreCalculatorService {
